@@ -5,7 +5,6 @@ import { Directive, ElementRef, HostListener, HostBinding, Input } from '@angula
 })
 export class TextTransformationDirective {
 
-  // tslint:disable-next-line: no-input-rename
   fontSize: string;
   @HostBinding('style.background-color') background: string;
 
@@ -13,7 +12,7 @@ export class TextTransformationDirective {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.background = 'navajowhite';
+    this.background = 'pink';
     this.fontSize = '50px';
     this.IncreaseFontSize();
   }
